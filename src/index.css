@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,128 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100%;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./75614.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+}
+
+.header {
+
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em;
+  position: absolute;
+  top: 100px;
+  
+
+  backdrop-filter: blur(25px);
+  border-radius: 0.4em;
+  transition: all 0.3s ease;
+
+}
+.header p {
+  color: cornsilk;
+  font-size: 0.7rem;
+}
+.city+span{
+  font-size:1.5em;
+  font-weight: 700;
+}
+input[type="text"]::placeholder {
+  color: white;
+  font-weight: 500;
+}
+input[type="text"] {
+  border: none;
+
+  outline: none;
+  height: 30px;
+  width: 50%;
+  padding: 0.3em 0.5em;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-bottom: 0.7px solid white;
+}
+
+
+.main {
+  
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3));
+  backdrop-filter: blur(25px);
+
+  
+
+  padding: 0.5em;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4em;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+  
+}
+
+.temperature {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.3em;
+  margin: 0.3em;
+  justify-content: space-evenly;
+
+  border-bottom: 0.1px solid rgba(255,255,255,0.3);
+
+}
+
+.temperature p span+span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.extras {
+  margin: 0.3em;
+  padding: 0.3em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+  border-bottom: 0.1px solid rgba(255,255,255,0.3);
+
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main:hover,.header:hover {
+  box-shadow: 1px 1px 10px black;
 }

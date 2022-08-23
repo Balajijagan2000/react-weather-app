@@ -1,3 +1,9 @@
+# Changes to be done before starting
+
+Go to src folder 
+Edit App.js file and replace your own api key from openweather api (https://openweathermap.org/)
+Eg: changes to be done --> const API_KEY = '<YOUR_API_KEY>';
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
